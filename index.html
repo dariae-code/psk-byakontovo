@@ -96,54 +96,6 @@
             max-width: 800px;
             margin: 0 auto 3rem auto;
         }
-        
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-        
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 900px;
-            max-height: 80vh;
-            object-fit: contain;
-        }
-        
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-        
-        .close:hover {
-            color: #bbb;
-        }
-        
-        .modal-caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            font-size: 18px;
-        }
     </style>
 </head>
 <body class="text-gray-100">
@@ -290,63 +242,53 @@
         <section id="construction-photos" class="mb-20">
             <h2 class="section-title">Фотографии объекта</h2>
             <div class="card p-8">
-                <!-- Контейнер для фото: grid-cols-1 для мобильных, grid-cols-2 для средних и больших экранов -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-                    
                     <!-- Фото 1 -->
-                    <div class="overflow-hidden rounded-lg shadow-lg relative cursor-pointer group block" onclick="openModal('foto1.jpg', 'Внешний вид индустриального парка Бяконтово')">
-                        <img 
-                            src="foto1.jpg" 
+                    <div class="overflow-hidden rounded-lg shadow-lg block">
+                        <img
+                            src="foto1.jpg"
                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/374151/ffffff?text=ВНЕШНИЙ+ВИД';"
-                            alt="Внешний вид индустриального парка Бяконтово" 
-                            class="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
-                        >
-                        <div class="absolute inset-0 bg-[#2c2c2c] flex items-center justify-center transition duration-300"> 
-                             <span class="text-white group-hover:text-orange-500 text-2xl font-bold transition-colors duration-300">Фото 1</span>
+                            alt="Внешний вид индустриального парка Бяконтово"
+                            class="w-full h-72 object-cover transition duration-300"
+                        />
+                        <div class="mt-2 text-gray-200 font-bold">
+                            Внешний вид индустриального парка Бяконтово
                         </div>
                     </div>
-
                     <!-- Фото 2 -->
-                    <div class="overflow-hidden rounded-lg shadow-lg relative cursor-pointer group block" onclick="openModal('foto2.jpg', 'Корпус')">
-                        <img 
-                            src="foto2.jpg" 
+                    <div class="overflow-hidden rounded-lg shadow-lg block">
+                        <img
+                            src="foto2.jpg"
                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/374151/ffffff?text=ИНТЕРЬЕР';"
-                            alt="Корпус" 
-                            class="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
-                        >
-                        <div class="absolute inset-0 bg-[#2c2c2c] flex items-center justify-center transition duration-300"> 
-                             <span class="text-white group-hover:text-orange-500 text-2xl font-bold transition-colors duration-300">Фото 2</span>
-                        </div>
+                            alt="Корпус"
+                            class="w-full h-72 object-cover transition duration-300"
+                        />
+                        <div class="mt-2 text-gray-200 font-bold">Корпус</div>
                     </div>
-
                     <!-- Фото 3 -->
-                    <div class="overflow-hidden rounded-lg shadow-lg relative cursor-pointer group block" onclick="openModal('foto3.JPG', 'Пространство секции')">
-                        <img 
-                            src="foto3.JPG" 
+                    <div class="overflow-hidden rounded-lg shadow-lg block">
+                        <img
+                            src="foto3.JPG"
                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/374151/ffffff?text=ИНТЕРЬЕР';"
-                            alt="Пространство секции" 
-                            class="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
-                        >
-                        <div class="absolute inset-0 bg-[#2c2c2c] flex items-center justify-center transition duration-300"> 
-                             <span class="text-white group-hover:text-orange-500 text-2xl font-bold transition-colors duration-300">Фото 3</span>
-                        </div>
+                            alt="Пространство секции"
+                            class="w-full h-72 object-cover transition duration-300"
+                        />
+                        <div class="mt-2 text-gray-200 font-bold">Пространство секции</div>
                     </div>
-
                     <!-- Фото 4 -->
-                    <div class="overflow-hidden rounded-lg shadow-lg relative cursor-pointer group block" onclick="openModal('foto4.jpg', 'Визуализация офисного блока (АБК)')">
-                        <img 
-                            src="foto4.jpg" 
+                    <div class="overflow-hidden rounded-lg shadow-lg block">
+                        <img
+                            src="foto4.jpg"
                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/374151/ffffff?text=ОФИСНАЯ+ЧАСТЬ';"
-                            alt="Визуализация офисного блока (АБК)" 
-                            class="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
-                        >
-                        <div class="absolute inset-0 bg-[#2c2c2c] flex items-center justify-center transition duration-300"> 
-                             <span class="text-white group-hover:text-orange-500 text-2xl font-bold transition-colors duration-300">Фото 4</span>
+                            alt="Визуализация офисного блока (АБК)"
+                            class="w-full h-72 object-cover transition duration-300"
+                        />
+                        <div class="mt-2 text-gray-200 font-bold">
+                            Визуализация офисного блока (АБК)
                         </div>
                     </div>
                 </div>
-                <!-- Нижняя подпись -->
-                <p class="text-center italic text-gray-400 mt-6 text-sm">Нажмите на фото для просмотра в увеличенном размере. Источник: Октябрь 2025 г.</p>
+                <p class="text-center italic text-gray-400 mt-6 text-sm">Источник: Октябрь 2025 г.</p>
             </div>
         </section>
         <!-- КОНЕЦ СЕКЦИИ -->
@@ -464,7 +406,7 @@
 
                <!-- Иконки социальных сетей/мессенджеров -->
                <div class="flex space-x-6 pt-4">
-                   <!-- Telegram Icon - FIXED -->
+                   <!-- Telegram Icon -->
                    <a href="https://t.me/elena_i_kash" class="text-gray-400 hover:text-blue-400 transition-colors duration-200" title="Написать в Telegram">
                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
                            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.636 7.822c-.171.185-11.832 5.093-11.832 5.093s-.308.15.011.026c.4-.15.8-3.085 1.836-9.155.034-.196.222-.24.316-.062.247.464 1.137 2.07 1.62 3.107.03.064.086.136.16.195.038.03.076.046.115.048.24-.038 4.228-2.618 4.7-2.92.17-.11.45-.044.59.13.14.173.16.326.03.498-1.295 1.708-3.55 3.3-3.88 3.535-.04.03-.076.06-.11.09-.07.054-.11.076-.14.076-.23 0-1.78-1.12-1.92-1.206-.12-.073-.18-.088-.23-.088-.04 0-.084.01-.13.04-1.28.665-2.02 1.054-2.02 1.054s-.265.138.01.292c.31.17.65 4.39 1.764 5.25.043.033.07.04.08.04.14 0 .34-.13.56-.47 1.11-1.7 4.07-5.83 5.48-6.93.37-.29.83-.55.83-.55s.68-.45 1.25.04c.57.49.52 1.4-.07 1.7-1.16.59-4.8 2.5-4.8 2.5s-1.07.55-1.13 1.25c-.05.65.6 1.1 1.2 1.1.2 0 .44-.06.67-.14 3.7-1.2 5.5-2.3 5.5-2.3s.98-.5 1.47-1.3c.49-.8.4-1.8-.2-2.3l-1.3-1.1zm-8.232 4.416z"/>
@@ -483,44 +425,7 @@
        </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="modalCaption" class="modal-caption"></div>
-    </div>
-
     <script>
-        // Modal functionality
-        function openModal(src, caption) {
-            const modal = document.getElementById("imageModal");
-            const modalImg = document.getElementById("modalImage");
-            const captionText = document.getElementById("modalCaption");
-            
-            modal.style.display = "block";
-            modalImg.src = src;
-            captionText.innerHTML = caption;
-        }
-        
-        function closeModal() {
-            document.getElementById("imageModal").style.display = "none";
-        }
-        
-        // Close modal when clicking outside the image
-        window.onclick = function(event) {
-            const modal = document.getElementById("imageModal");
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-        
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape") {
-                closeModal();
-            }
-        });
-
         document.addEventListener('DOMContentLoaded', () => {
             // Цвета для темной темы
             const FONT_COLOR = '#f3f4f6'; // Light text
@@ -668,7 +573,4 @@
     </script>
 </body>
 </html>
-
-
-
 

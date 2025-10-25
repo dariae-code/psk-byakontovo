@@ -294,34 +294,40 @@
         <!-- КОНЕЦ СЕКЦИИ -->
 
         <section id="financials" class="mb-20">
-            <h2 class="section-title">Финансовые модели</h2>
-            <p class="section-subtitle">Проект предлагает два прозрачных сценария входа с четко прогнозируемой доходностью как для розничных, так и для крупных инвесторов.</p>
+            <h2 class="section-title">Финансовая модель</h2>
+            <p class="section-subtitle">Проект предлагает два сценария с прогнозируемой доходностью инвестиций.</p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="card p-6">
-                    <h3 class="font-bold text-xl mb-2 text-center text-white">Модель 1: Покупка 1 готового лота (~1300 м²)</h3>
-                    <p class="text-center text-gray-400 mb-6">Стабильный пассивный доход с первого дня.</p>
+                    <h3 class="font-bold text-xl mb-2 text-center text-white">Ключевые метрики готового объекта</h3>
+                    <p class="text-center text-gray-400 mb-6">Стоимость и доходность 1 лота 1300 м².</p>
                     <div class="space-y-4">
                         <div class="flex justify-between items-center p-3 bg-gray-700 rounded-md">
                             <span class="text-gray-300">Рыночная цена (CAPEX)</span>
                             <span class="font-bold text-white">221,0 млн ₽</span>
                         </div>
                         <div class="flex justify-between items-center p-3 bg-gray-700 rounded-md">
-                            <span class="text-gray-300">Чистый доход в год (NOI)</span>
+                            <span class="text-gray-300">Чистый арендный доход в год (NOI)</span>
                             <span class="font-bold text-white">22,47 млн ₽</span>
                         </div>
                         <div class="flex justify-between items-center p-3 bg-orange-700 rounded-md text-white">
                             <span class="font-bold text-lg">Арендная доходность (Cap Rate)</span>
-                            <span class="font-bold text-2xl">10,2%</span>
+                            <span class="font-bold text-2xl">17,5%</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-red-700 rounded-md text-white">
+                            <span class="font-bold text-lg">Окупаемость проекта (лет)</span>
+                            <span class="font-bold text-2xl">6,3</span>
                         </div>
                     </div>
                 </div>
                  <div class="card p-6">
-                    <h3 class="font-bold text-xl mb-4 text-center text-white">Модель 2: Выкуп и достройка всего проекта</h3>
-                     <p class="text-center text-gray-400 mb-6">Максимальный рост капитала за счет эффекта масштаба.</p>
+                    <h3 class="font-bold text-xl mb-4 text-center text-white">Инвестиционная динамика</h3>
+                     <p class="text-center text-gray-400 mb-6">От CAPEX до рыночной стоимости (млрд.,р.).</p>
                     <div class="chart-container">
                         <canvas id="projectRoiChart"></canvas>
                     </div>
-                    <div class="text-center mt-4 text-orange-500 font-bold text-2xl">Потенциальный ROI +134%</div>
+                  <div class="text-center mt-6 text-orange-500 font-extrabold text-2xl leading-snug">
+                    <p>Потенциальный ROI +56,3%</p>
+                    <p class="mt-1">Чистая прибыль 580 млн.</p>
                 </div>
             </div>
         </section>
@@ -333,21 +339,21 @@
                 <div>
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-gray-300">Инженерные сети и коммуникации</span>
-                        <span class="text-sm font-medium text-green-400">100% (Сдано)</span>
+                        <span class="text-sm font-medium text-white-400">100% (Сдано)</span>
                     </div>
-                    <div class="w-full bg-gray-700 rounded-full h-4"><div class="bg-green-600 h-4 rounded-full" style="width: 100%"></div></div>
+                    <div class="w-full bg-gray-700 rounded-full h-4"><div class="bg-red-600 h-4 rounded-full" style="width: 100%"></div></div>
                 </div>
                  <div>
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-gray-300">Корпус 3, Секция 1</span>
-                        <span class="text-sm font-medium text-orange-400">90%</span>
+                        <span class="text-sm font-medium text-white-400">90%</span>
                     </div>
                     <div class="w-full bg-gray-700 rounded-full h-4"><div class="bg-orange-500 h-4 rounded-full" style="width: 90%"></div></div>
                 </div>
                  <div>
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-gray-300">Корпус 3, Секция 2</span>
-                        <span class="text-sm font-medium text-yellow-400">70%</span>
+                        <span class="text-sm font-medium text-white-400">70%</span>
                     </div>
                     <div class="w-full bg-gray-700 rounded-full h-4"><div class="bg-yellow-500 h-4 rounded-full" style="width: 70%"></div></div>
                 </div>
@@ -358,34 +364,34 @@
         </section>
 
         <section id="investment-scenarios">
-            <h2 class="section-title">Ваша стратегия инвестирования</h2>
-            <p class="section-subtitle">Выберите один из трех сценариев, который наилучшим образом соответствует вашим целям, капиталу и уровню вовлеченности в проект.</p>
+            <h2 class="section-title">Ваша стратегия инвестирования</h2> 
+          </div>
              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 border-t-4 border-indigo-500 hover:scale-[1.03] transition-transform duration-300">
+                    <h3 class="font-bold text-xl mb-4 text-white">Покупка проекта</h3>
+                    <p class="mb-4 text-gray-400">Приобретение ЗУ 2 га, пакет проектной документацией, 2 секции 3 корпуса .</p>
+                     <div class="bg-indigo-700 text-white p-4 rounded-md text-center">
+                        <div class="font-bold text-lg">ROI 56,3%</div>
+                        <div class="text-sm">Полный контроль и максимальный апсайд</div>
+                    </div>
+                </div>
                 <div class="card p-6 border-t-4 border-orange-500 hover:scale-[1.03] transition-transform duration-300">
-                    <h3 class="font-bold text-xl mb-4 text-white">Вариант 1: 1 Лот</h3>
-                    <p class="mb-4 text-gray-400">Покупка готовой секции от 1300 м².</p>
+                    <h3 class="font-bold text-xl mb-4 text-white">Сдача в ренду</h3>
+                    <p class="mb-4 text-gray-400">Прогнозная годовая доходность</p>
                     <div class="bg-orange-700 text-white p-4 rounded-md text-center">
-                        <div class="font-bold text-lg">Cap Rate 10,2%</div>
+                        <div class="font-bold text-lg">Cap Rate 17,5%</div>
                         <div class="text-sm">Стабильный пассивный доход</div>
                     </div>
                 </div>
                 <div class="card p-6 border-t-4 border-teal-500 hover:scale-[1.03] transition-transform duration-300">
-                    <h3 class="font-bold text-xl mb-4 text-white">Вариант 2: Объект «под ключ»</h3>
-                    <p class="mb-4 text-gray-400">Инвестиции в завершение проекта (7 секций).</p>
+                    <h3 class="font-bold text-xl mb-4 text-white">Потенциал</h3>
+                    <p class="mb-4 text-gray-400">Завершённого проекта (7 секций).</p>
                      <div class="bg-teal-700 text-white p-4 rounded-md text-center">
-                        <div class="font-bold text-lg">IRR 25%+</div>
+                        <div class="font-bold text-lg">IRR 24,6%+</div>
                         <div class="text-sm">Портфельная премия</div>
                     </div>
                 </div>
-                <div class="card p-6 border-t-4 border-indigo-500 hover:scale-[1.03] transition-transform duration-300">
-                    <h3 class="font-bold text-xl mb-4 text-white">Вариант 3: Выкуп проекта</h3>
-                    <p class="mb-4 text-gray-400">Приобретение ЗУ с проектной документацией.</p>
-                     <div class="bg-indigo-700 text-white p-4 rounded-md text-center">
-                        <div class="font-bold text-lg">ROI 134%</div>
-                        <div class="text-sm">Полный контроль и максимальный апсайд</div>
-                    </div>
-                </div>
-            </div>
+              </div>
         </section>
 
     </main>
@@ -394,7 +400,7 @@
     <footer class="card-like-header-footer text-white shadow-inner">
        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
            <h2 class="text-3xl font-bold mb-4 accent-orange">Не упустите окно возможностей!</h2>
-           <p class="max-w-2xl mx-auto mb-8 text-gray-400">Рынок Light Industrial находится в фазе дефицита. Свяжитесь с нами сегодня, чтобы получить персональный расчёт доходности и забронировать лучший лот на старте.</p>
+           <p class="max-w-3xl mx-auto mb-4 text-white-500">Рынок Light Industrial находится в фазе дефицита. Свяжитесь с нами сегодня, чтобы узнать подробности и получить наиболее выгодные условия.</p>
 
            <!-- Блок контактов с иконками -->
            <div class="flex flex-col items-center justify-center space-y-3">
@@ -438,7 +444,7 @@
 
             // Цвета для графиков
             const CHART_COLORS = [
-                ACCENT_ORANGE, ACCENT_BLUE, ACCENT_YELLOW, ACCENT_GREEN, ACCENT_GREY,
+                ACCENT_YELLOW, ACCENT_BLUE, ACCENT_ORANGE,
             ];
 
             const wrapLabel = (label, maxLength = 25) => {
@@ -554,13 +560,13 @@
                 options: { ...defaultChartOptions, scales: { y: { display: false }, x: { display: false } } }
             });
 
-            // 4. Project ROI Chart (Bar)
+            // 4. Project ROI Chart (Bar) - обновленные данные
             const projectRoiData = {
-                labels: ['Стоимость входа («как есть»)', 'Рыночная стоимость (прогноз)'],
+                labels: ['Стоимость проекта', 'Общие капитальные затраты', 'Рыночная стоимость (прогноз)'],
                 datasets: [{
-                    data: [0.698, 1.63],
-                    backgroundColor: [ACCENT_YELLOW, ACCENT_ORANGE],
-                    borderColor: [ACCENT_YELLOW, ACCENT_ORANGE],
+                    data: [0.698, 1.045, 1.63], // 0.698 + 0.347 = 1.045
+                    backgroundColor: [ACCENT_YELLOW, ACCENT_BLUE, ACCENT_ORANGE],
+                    borderColor: [ACCENT_YELLOW, ACCENT_BLUE, ACCENT_ORANGE],
                     borderWidth: 1
                 }]
             };
